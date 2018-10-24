@@ -3,7 +3,8 @@
     <Product 
       v-for="product in productsList" 
       :name="product.name" 
-      :price="product.price" 
+      :price="product.price"
+      :id="product.id" 
       :key="product.id"/>
   </div>
 </template>
