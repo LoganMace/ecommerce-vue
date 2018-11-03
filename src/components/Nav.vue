@@ -6,6 +6,7 @@
       <router-link to="/womens">Women's</router-link> |
       <router-link to="/accessories">Accessories</router-link>
     </ul>
+    <div>CART</div>
   </nav>
 </template>
 
