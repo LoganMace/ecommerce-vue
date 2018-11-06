@@ -15,6 +15,7 @@
   import {productsList} from '../products.js';
 
   export default {
+    props: [],
     components: {
       Product
     },
