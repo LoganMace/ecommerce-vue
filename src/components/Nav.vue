@@ -2,8 +2,8 @@
   <nav>
     <ul>
       <router-link to="/">Home</router-link> |
-      <router-link to="/mens">Men's</router-link> |
-      <router-link to="/womens">Women's</router-link> |
+      <router-link to="/guitars">Guitars</router-link> |
+      <router-link to="/keyboards">Keyboards</router-link> |
       <router-link to="/accessories">Accessories</router-link>
     </ul>
     <div>CART</div>
