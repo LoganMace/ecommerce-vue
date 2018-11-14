@@ -2,9 +2,11 @@
   <nav>
     <ul>
       <router-link to="/">Home</router-link> |
-      <router-link to="/guitars">Guitars</router-link> |
-      <router-link to="/keyboards">Keyboards</router-link> |
-      <router-link to="/accessories">Accessories</router-link>
+      <router-link to="/Guitars">Guitars</router-link> |
+      <router-link to="/Bass">Bass</router-link> |
+      <router-link to="/Drums">Drums</router-link> |
+      <router-link to="/Keyboards">Keyboards</router-link> |
+      <router-link to="/Accessories">Accessories</router-link>
     </ul>
     <div>CART</div>
   </nav>
@@ -20,6 +22,8 @@ export default {
   nav {
     padding: 20px;
     background-color: #eef3f8;
+    display: flex;
+    justify-content: space-between;
     ul {
       
       a {
