@@ -21,7 +21,7 @@ export default {
 <style lang="scss" scoped>
   nav {
     padding: 20px;
-    background-color: #eef3f8;
+    background-color: #e4e4e4;
     display: flex;
     justify-content: space-between;
     ul {
@@ -30,7 +30,7 @@ export default {
         font-weight: bold;
         color: #2c3e50;
         &.router-link-exact-active {
-          color: #42b983;
+          color: #42a7b9;
         }
       }
     }

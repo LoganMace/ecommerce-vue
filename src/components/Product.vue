@@ -2,18 +2,20 @@
     <div class="card-wrap">
       <router-link :to="'/product/' + id">
         <!-- <img src="" alt="image"> -->
-        <img alt="Vue logo" src="../assets/logo.png">
-        <h2>{{ name }}</h2>
+        <img v-if="images" :alt="name" :src="images[0]">
+        <h3>{{ name }}</h3>
       </router-link>
       <p>{{ price }}</p>
-      <input type="number" name="quantity" min="0">
-      <button>Add to Cart</button>
+      <div>
+        <input type="number" name="quantity" min="0">
+        <button>Add to Cart</button>
+      </div>
     </div>
 </template>
 
 <script>
   export default {
-    props: ['name', 'price', 'id']
+    props: ['name', 'price', 'images', 'id']
   }
 </script>
 
@@ -25,9 +27,23 @@
   .card-wrap {
     border: solid 1px lightgray;
     width: 300px;
-    margin: 20px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &:hover {
+      box-shadow: 0 2px 4px rgba(107, 107, 107, 0.74);
+    }
+    h3 {
+      font-size: 14px;
+      margin: 4px;
+    }
     img {
-      width: 150px;
+      width: 250px;
+      margin: 10px;
+    }
+    div {
+      margin: 10px;
     }
     input {
       width: 28px;
