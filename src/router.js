@@ -9,13 +9,13 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/',
-      name: 'guitars',
+      path: '/Guitars',
+      name: 'Guitars',
       component: Guitars
     },
     {
-      path: '/bass',
-      name: 'bass',
+      path: '/Bass',
+      name: 'Bass',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.

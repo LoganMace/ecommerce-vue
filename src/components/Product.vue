@@ -30,7 +30,7 @@
       width: 150px;
     }
     input {
-      width: 20px;
+      width: 28px;
     }
   }
 </style>
