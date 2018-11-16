@@ -32,7 +32,7 @@
     flex-direction: column;
     justify-content: space-between;
     &:hover {
-      box-shadow: 0 2px 4px rgba(107, 107, 107, 0.74);
+      box-shadow: 0 2px 8px rgba(107, 107, 107, 0.452);
     }
     h3 {
       font-size: 14px;
