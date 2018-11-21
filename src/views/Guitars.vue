@@ -24,7 +24,7 @@ export default {
   },
   mounted() {
     // this.$store.dispatch("getAllProducts")
-    axios.get('http://localhost:3001/api/products').then(response => {
+    axios.get(`http://localhost:3001/api/products/${'electric guitar'}`).then(response => {
       console.log(response.data);
       this.products = response.data;
     })

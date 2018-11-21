@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar>
+  <v-toolbar class="blue-grey">
     <v-toolbar-items>
       <v-btn flat>
         <router-link to="/">
@@ -80,7 +80,7 @@
     </v-toolbar-items>
     <v-spacer></v-spacer>
     <v-btn icon>
-      <v-icon>shopping_cart</v-icon>
+      <v-icon color="white">shopping_cart</v-icon>
     </v-btn>
   </v-toolbar>
 </template>
@@ -94,7 +94,7 @@ export default {
 <style lang="scss" scoped>
   a {
     text-decoration: none;
-    color: black;
+    color: white;
   }
   .category {
     width: 100%;
