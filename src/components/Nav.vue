@@ -1,12 +1,12 @@
 <template>
-  <v-toolbar class="blue-grey">
+  <v-toolbar class="primary">
     <v-toolbar-items>
       <v-btn flat>
         <router-link to="/">
           <v-icon>home</v-icon>
         </router-link>
       </v-btn>
-      <v-menu open-on-hover bottom auto offset-y attach>
+      <v-menu open-on-hover bottom offset-y attach>
         <v-btn flat slot="activator">
           <router-link to="/Guitars">Guitars</router-link>
         </v-btn>
@@ -19,7 +19,7 @@
             </v-btn>
         </v-list>
       </v-menu>
-      <v-menu open-on-hover bottom auto offset-y attach>
+      <v-menu open-on-hover bottom offset-y attach>
         <v-btn flat slot="activator">
           <router-link to="/Bass">Bass</router-link>
         </v-btn>
@@ -32,7 +32,7 @@
             </v-btn>
         </v-list>
       </v-menu>
-      <v-menu open-on-hover bottom auto offset-y attach>
+      <v-menu open-on-hover bottom offset-y attach>
         <v-btn flat slot="activator">
           <router-link to="/Drums">Drums</router-link>
         </v-btn>
@@ -45,7 +45,7 @@
             </v-btn>
         </v-list>
       </v-menu>
-      <v-menu open-on-hover bottom auto offset-y attach>
+      <v-menu open-on-hover bottom offset-y attach>
         <v-btn flat slot="activator">
           <router-link to="/Keyboards">Keyboards</router-link>
         </v-btn>
@@ -58,7 +58,7 @@
             </v-btn>
         </v-list>
       </v-menu>
-      <v-menu open-on-hover bottom auto offset-y attach>
+      <v-menu open-on-hover bottom offset-y attach>
         <v-btn flat slot="activator">
           <router-link to="/Accessories">Accessories</router-link>
         </v-btn>

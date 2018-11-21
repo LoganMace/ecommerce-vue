@@ -25,6 +25,7 @@
     color: black;
   }
   .card-wrap {
+    background: white;
     border: solid 1px lightgray;
     width: 300px;
     margin: 5px;
