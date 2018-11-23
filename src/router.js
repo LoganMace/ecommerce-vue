@@ -27,7 +27,7 @@ export default new Router({
     },
     {
       path: '/product/:id',
-      name: 'product',
+      name: 'Product',
       component: () => import('./components/ProdDetail.vue')
     }
   ]
