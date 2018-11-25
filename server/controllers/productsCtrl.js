@@ -19,8 +19,16 @@ getSpecificCategory = (req, res) => {
       .catch(err => console.log(err));
 };
 
+getProductById = (req, res) => {
+  req.app.get('db')
+    .products.get_product_by_id(req.params.id)
+      .then(response => console.log(response) || res.status(200).json(response))
+      .catch(err => console.log(err));
+};
+
 module.exports = {
   getAllProducts,
   getProductByCategory,
-  getSpecificCategory
+  getSpecificCategory,
+  getProductById
 };
