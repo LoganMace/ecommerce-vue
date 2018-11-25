@@ -1,7 +1,6 @@
 <template>
     <div class="card-wrap">
       <router-link :to="'/product/' + id">
-        <!-- <img src="" alt="image"> -->
         <img v-if="images" :alt="name" :src="images[0]">
         <h3>{{ name }}</h3>
       </router-link>

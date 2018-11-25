@@ -5,8 +5,8 @@
       :name="product.name" 
       :price="product.price"
       :images="product.images"
-      :id="product.id" 
-      :key="product.id"/>
+      :id="product.product_id" 
+      :key="product.product_id"/>
   </div>
 </template>
 
