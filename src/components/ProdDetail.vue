@@ -9,7 +9,7 @@
         :src="image"
       ></v-carousel-item>
     </v-carousel>
-    <p>{{ product.price }}</p>
+    <p class="price">{{ product.price }}</p>
     <p>{{ product.description }}</p>
   </div>
 </template>
@@ -43,5 +43,8 @@ export default {
 <style lang="scss" scoped>
   .carousel {
     background: white;
+  }
+  .price {
+    font-weight: bold;
   }
 </style>
