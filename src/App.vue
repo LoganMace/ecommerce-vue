@@ -3,9 +3,7 @@
     <v-app>
       <v-content>
         <Nav/>
-        <v-container>
           <router-view/>
-        </v-container>
       </v-content>
     </v-app>
   </div>
