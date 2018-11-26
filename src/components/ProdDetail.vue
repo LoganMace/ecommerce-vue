@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>{{product.name}}</h1>
+    <h1>{{ product.name }}</h1>
     <v-carousel :cycle="false" :light="true" :hide-delimiters="true" :height="300" class="carousel">
       <v-carousel-item
         v-for="(image,i) in product.images"
@@ -8,6 +8,8 @@
         :src="image"
       ></v-carousel-item>
     </v-carousel>
+    <p>{{ product.price }}</p>
+    <p>{{ product.description }}</p>
   </div>
 </template>
 
@@ -41,6 +43,8 @@ export default {
   .carousel {
     background: white;
     width: 300px;
+    padding: 0;
+    margin: 0;
   }
   .v-image__image--cover {
     background-size: 300px;
