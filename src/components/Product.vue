@@ -4,7 +4,7 @@
         <img v-if="images" :alt="name" :src="images[0]">
         <h3>{{ name }}</h3>
       </router-link>
-      <p>{{ price }}</p>
+      <p>{{ priceWithCommas }}</p>
       <div>
         <input type="number" name="quantity" min="0">
         <button>Add to Cart</button>
@@ -14,7 +14,12 @@
 
 <script>
   export default {
-    props: ['name', 'price', 'images', 'id']
+    props: ['name', 'price', 'images', 'id'],
+    computed: {
+      priceWithCommas() {
+        return this.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      }
+    }
   }
 </script>
 
