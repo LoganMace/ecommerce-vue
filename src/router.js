@@ -23,7 +23,7 @@ export default new Router({
     {
       path: '/:category',
       name: 'Category',
-      component: () => console.log('hit') || import('./views/Category')
+      component: () => import('./views/Category')
     },
     {
       path: '/product/:id',

@@ -6,14 +6,17 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    products: []
+    cart: []
   },
   mutations: {
-
+    'ADD_TO_CART'(state, product) {
+      console.log(product);
+      state.cart.push(product);
+    }
   },
   actions: {
-    getAllProducts({commit}) {
-      let {data} = axios.get('/api/products/all').then(response => console.log(response))
+    addToCart: ({commit}, product) => {
+      commit('ADD_TO_CART', product);
     }
   }
 })

@@ -33,7 +33,7 @@ export default {
   },
   computed: {
     priceWithCommas() {
-      return this.product.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      return Number(this.product.price).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
     }
   },
   mounted() {

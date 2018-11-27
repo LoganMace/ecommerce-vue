@@ -27,11 +27,10 @@ export default {
       axios.get(`http://localhost:3001/api/products/${this.$route.params.category}`).then(response => {
         console.log(response.data);
         this.products = response.data;
-      })
+      });
     }
   },
   mounted() {
-    // this.$store.dispatch("getAllProducts")
     this.getProducts();
   },
   watch: {
