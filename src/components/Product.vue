@@ -34,7 +34,7 @@
           id: this.id,
           price: this.price,
           name: this.name,
-          quantity: this.quantity
+          quantity: +this.quantity
         };
         this.$store.dispatch('addToCart', product);
       }
