@@ -80,7 +80,9 @@
     </v-toolbar-items>
     <v-spacer></v-spacer>
     <v-btn icon>
-      <v-icon color="white">shopping_cart</v-icon>
+      <router-link to="/Cart">
+        <v-icon color="white">shopping_cart</v-icon>
+      </router-link>
     </v-btn>
   </v-toolbar>
 </template>

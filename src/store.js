@@ -10,7 +10,9 @@ export default new Vuex.Store({
   mutations: {
     'ADD_TO_CART'(state, product) {
       console.log(product);
-      state.cart.push(product);
+      if(product.quantity > 0) {
+        state.cart.push(product);
+      }
     }
   },
   actions: {
@@ -19,6 +21,6 @@ export default new Vuex.Store({
     }
   },
   getters: {
-    getCart: state => state.cart
+    getCart: state => console.log(state.cart) || state.cart
   }
 })
