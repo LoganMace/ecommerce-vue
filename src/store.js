@@ -13,6 +13,9 @@ export default new Vuex.Store({
       if(product.quantity > 0) {
         state.cart.push(product);
       }
+    },
+    'CHANGE_QUANTITY'() {
+      
     }
   },
   actions: {

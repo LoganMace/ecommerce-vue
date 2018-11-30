@@ -6,7 +6,7 @@
           <v-icon>home</v-icon>
         </router-link>
       </v-btn>
-      <v-menu open-on-hover bottom offset-y attach>
+      <v-menu open-on-hover bottom offset-y attach transition="slide-x-transition">
         <v-btn flat slot="activator">
           <router-link to="/products/Guitars">Guitars</router-link>
         </v-btn>
@@ -19,7 +19,7 @@
             </v-btn>
         </v-list>
       </v-menu>
-      <v-menu open-on-hover bottom offset-y attach>
+      <v-menu open-on-hover bottom offset-y attach transition="slide-x-transition">
         <v-btn flat slot="activator">
           <router-link to="/products/Bass">Bass</router-link>
         </v-btn>
@@ -32,7 +32,7 @@
             </v-btn>
         </v-list>
       </v-menu>
-      <v-menu open-on-hover bottom offset-y attach>
+      <v-menu open-on-hover bottom offset-y attach transition="slide-x-transition">
         <v-btn flat slot="activator">
           <router-link to="/products/Drums">Drums</router-link>
         </v-btn>
@@ -45,7 +45,7 @@
             </v-btn>
         </v-list>
       </v-menu>
-      <v-menu open-on-hover bottom offset-y attach>
+      <v-menu open-on-hover bottom offset-y attach transition="slide-x-transition">
         <v-btn flat slot="activator">
           <router-link to="/products/Keyboards">Keyboards</router-link>
         </v-btn>
@@ -58,7 +58,7 @@
             </v-btn>
         </v-list>
       </v-menu>
-      <v-menu open-on-hover bottom offset-y attach>
+      <v-menu open-on-hover bottom offset-y attach transition="slide-x-transition">
         <v-btn flat slot="activator">
           <router-link to="/products/Accessories">Accessories</router-link>
         </v-btn>
