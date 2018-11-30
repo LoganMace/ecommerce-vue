@@ -51,8 +51,10 @@ export default {
   }
   .bold {
     font-weight: bold;
+    margin: 10px 0;
   }
   .desc {
     text-align: left;
+    margin: 10px 50px;
   }
 </style>

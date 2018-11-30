@@ -101,6 +101,9 @@ export default {
   .category {
     width: 100%;
     padding: 10px;
+    &:hover {
+      background: rgb(110, 207, 191);
+    }
   }
   .dropdown {
     padding: 0;
