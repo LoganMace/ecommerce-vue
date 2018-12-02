@@ -7,9 +7,9 @@
         </router-link>
       </v-btn>
       <v-menu open-on-hover bottom offset-y attach transition="slide-x-transition">
-        <v-btn flat slot="activator">
-          <router-link to="/products/Guitars">Guitars</router-link>
-        </v-btn>
+          <v-btn dark to="/products/Guitars" flat slot="activator">
+            Guitars
+          </v-btn>
         <v-list class="dropdown">
             <v-btn flat class="category">
               <v-list-tile-title ripple>Electric Guitar</v-list-tile-title>
@@ -20,8 +20,8 @@
         </v-list>
       </v-menu>
       <v-menu open-on-hover bottom offset-y attach transition="slide-x-transition">
-        <v-btn flat slot="activator">
-          <router-link to="/products/Bass">Bass</router-link>
+        <v-btn dark to="/products/Bass" flat slot="activator">
+          Bass
         </v-btn>
         <v-list class="dropdown">
             <v-btn flat class="category">
@@ -33,8 +33,8 @@
         </v-list>
       </v-menu>
       <v-menu open-on-hover bottom offset-y attach transition="slide-x-transition">
-        <v-btn flat slot="activator">
-          <router-link to="/products/Drums">Drums</router-link>
+        <v-btn dark to="/products/Drums" flat slot="activator">
+          Drums
         </v-btn>
         <v-list class="dropdown">
             <v-btn flat class="category">
@@ -46,8 +46,8 @@
         </v-list>
       </v-menu>
       <v-menu open-on-hover bottom offset-y attach transition="slide-x-transition">
-        <v-btn flat slot="activator">
-          <router-link to="/products/Keyboards">Keyboards</router-link>
+        <v-btn dark to="/products/Keyboards" flat slot="activator">
+          Keyboards
         </v-btn>
         <v-list class="dropdown">
             <v-btn flat class="category">
@@ -59,8 +59,8 @@
         </v-list>
       </v-menu>
       <v-menu open-on-hover bottom offset-y attach transition="slide-x-transition">
-        <v-btn flat slot="activator">
-          <router-link to="/products/Accessories">Accessories</router-link>
+        <v-btn dark to="/products/Accessories" flat slot="activator">
+          Accessories
         </v-btn>
         <v-list class="dropdown">
             <v-btn flat class="category">
