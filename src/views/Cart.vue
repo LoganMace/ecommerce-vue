@@ -9,8 +9,7 @@
     <template slot="items" slot-scope="props">
       <td class="text-xs-left">{{ props.item.name }}</td>
       <td class="text-xs-left">{{ Number(props.item.price).toLocaleString('en-US', { style: 'currency', currency: 'USD' }) }}</td>
-      <td class="text-xs-left">{{ props.item.quantity }}</td>
-      <td class="text-xs-left remove"><input type="number" min="0" :max="props.item.quantity"/><button>Remove</button></td>
+      <td class="text-xs-left remove"><input type="number" :value="props.item.quantity" min="0"/><button>Change</button></td>
       <td class="text-xs-left">{{ Number(props.item.price * props.item.quantity).toLocaleString('en-US', { style: 'currency', currency: 'USD' }) }}</td>
     </template>
   </v-data-table>
@@ -27,7 +26,6 @@
           {text: 'Name', value: 'name', sortable: false},
           {text: 'Price', value: 'price', sortable: false},
           {text: 'Quantity', value: 'quantity', sortable: false},
-          {sortable: false},
           {text: 'Total', value: 'total', sortable: false}
         ]
       }
@@ -50,6 +48,9 @@
     input[type=number]::-webkit-inner-spin-button, 
     input[type=number]::-webkit-outer-spin-button {  
       opacity: 1;
+    }
+    button, input {
+      border: solid 1px lightgrey;
     }
   }
 </style>
