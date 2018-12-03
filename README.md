@@ -1,2 +1,2 @@
 Full stack Vue project.
-Vue, Vuex, Vue-Router.
+Vue, Vuex, Vue-Router, Vuetify.
