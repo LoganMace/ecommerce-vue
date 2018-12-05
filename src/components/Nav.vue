@@ -78,6 +78,9 @@
             <v-btn flat class="category">
               <v-list-tile-title ripple>Cases</v-list-tile-title>
             </v-btn>
+            <v-btn flat class="category">
+              <v-list-tile-title ripple>Misc</v-list-tile-title>
+            </v-btn>
         </v-list>
       </v-menu>
     </v-toolbar-items>
