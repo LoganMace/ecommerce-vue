@@ -43,6 +43,9 @@
             <v-btn flat class="category">
               <v-list-tile-title ripple>Acoustic Drums</v-list-tile-title>
             </v-btn>
+            <v-btn flat class="category">
+              <v-list-tile-title ripple>Percussion</v-list-tile-title>
+            </v-btn>
         </v-list>
       </v-menu>
       <v-menu open-on-hover bottom offset-y attach transition="slide-x-transition">
